@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookAction } from '../../redux/books/books';
 
-const New = (e) => {
+const New = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -16,8 +16,8 @@ const New = (e) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="title" placeholder="Title" />
-      <input type="text" name="author" placeholder="Author" />
+      <input type="text" name="title" placeholder="Title" required />
+      <input type="text" name="author" placeholder="Author" required />
       <button type="submit">Add</button>
     </form>
   );
