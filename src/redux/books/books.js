@@ -1,6 +1,6 @@
 import React from 'react';
 import Book from './book';
-import books from '../../components/mocBooks';
+import books from '../../components/books/mocBooks';
 
 const Books = () => (
   <ul>
