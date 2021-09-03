@@ -17,7 +17,7 @@ const Book = ({ id, title, category }) => {
           { title }
         </h2>
         <p>
-          {  category }
+          { category }
         </p>
       </div>
       <button type="button" onClick={() => handleRemove(id)}>Remove</button>

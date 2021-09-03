@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/Mv3IwYTVHxFjyvrUVnvE/books/`;
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/Mv3IwYTVHxFjyvrUVnvE/books/';
 
 const getBooks = async () => {
   const response = await axios.get(url);
@@ -24,7 +24,7 @@ const createBook = async (newBook) => {
 };
 
 const removeBook = async (id) => {
-  const removeURL = url + `${id}`;
+  const removeURL = `${url}${id}`;
   const response = await axios.delete(removeURL);
   return response.data;
 };

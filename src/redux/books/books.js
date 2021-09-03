@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import { getBooks, createBook, removeBook } from '../../api/api';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
@@ -20,7 +21,7 @@ const addBookAction = (title, category) => async (dispatch) => {
     category: `${category}`,
   };
 
-  await createNewBook(newBook);
+  await createBook(newBook);
 
   dispatch({
     type: ADD_BOOK,
@@ -40,22 +41,23 @@ const removeBookAction = (id) => async (dispatch) => {
 };
 
 const booksReducer = (state = [], action) => {
-
   switch (action.type) {
     case GET_BOOKS:
       return [...state, ...action.payload];
 
-      case ADD_BOOK: {
-        return [...state, action.payload];
-      }
+    case ADD_BOOK: {
+      return [...state, action.payload];
+    }
 
-      case REMOVE_BOOK: {
-        return state.filter((book) => book.item_id !== action.payload.item_id);
-      }
+    case REMOVE_BOOK: {
+      return state.filter((book) => book.item_id !== action.payload.item_id);
+    }
 
     default:
       return state;
   }
 };
 
-export { getBooksAction, addBookAction, removeBookAction, booksReducer, };
+export {
+  getBooksAction, addBookAction, removeBookAction, booksReducer,
+};
