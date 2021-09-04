@@ -16,6 +16,9 @@ const Nav = () => (
         CATEGORIES
       </span>
     </Link>
+    <Link to="/" className="user">
+      <i className="fas fa-user rounded"> </i>
+    </Link>
   </nav>
 );
 
