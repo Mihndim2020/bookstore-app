@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookAction } from '../../redux/books/books';
+import '../../styles/form.css';
 
 const New = () => {
   const dispatch = useDispatch();
@@ -15,18 +16,19 @@ const New = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="row mb-3">
-        <div className="col-6 col-sm-4 themed-grid-col">
-          <input type="text" name="title" placeholder="Title" required />
-        </div>
-        <div className="col-6 col-sm-4 themed-grid-col">
-          <input type="text" name="author" placeholder="Author" required />
-        </div>
-        <div className="col-6 col-sm-4 themed-grid-col">
-          <button type="submit" className="btn btn-primary">Add</button>
-        </div>
+    <form onSubmit={handleSubmit} className="panel-bg">
+      <div>
+        <span className="Title Text-Style-10">
+          ADD NEW BOOK
+        </span>
       </div>
+      <input type="text" name="title" placeholder="Title" className="Lesson-Panel" required />
+      <input className="Lesson-Panel-2" type="text" name="author" placeholder="Author" required />
+      <span className="ADD-BOOK">
+        <button type="submit" className="Rectangle-2 ADD-BOOK">
+          ADD BOOK
+        </button>
+      </span>
     </form>
   );
 };

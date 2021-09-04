@@ -6,3 +6,11 @@
     --btn: #4386bf;
     --warm-gray: #5a5959;
   }
+
+  .panel-bg {
+    width: 87.5rem;
+    height: 5.938rem;
+    margin: 0 0 2.375rem;
+    padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+    background-color: #fff;
+}
