@@ -1,73 +1,64 @@
-# Getting Started with Create React App
+# bookstore-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A Boostore app built with React-Redux which is able connect to an existing API to create and remove books in a remote server
 
-## Available Scripts
+## Screenshots
+![](./src/mainscreenshot.png)
 
-In the project directory, you can run:
+The objective of this project is to: Understand the concept of state management; use store, actions and reducers in React; Connect React and Redux, and Connect an existing API via Redux and use the data to display something in a UI
 
-### `yarn start`
+In this project, I have:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ - Initialized project with components
+ - Implemented create and remove book functionality
+ - Used API documentation to connect to Bookstore API
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Live Demo
 
-### `yarn test`
+[Netlify](https://deploy-preview-4--affectionate-feynman-2e3aae.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- React Router
+- Redux
+- Middleware
+- Thunk
+- Bookstore API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API 
+- [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
 
-### `yarn eject`
+- `browser`
+- `vscode`
+- `npm`
+- `node`
+- `git`
+- `jest`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Clone Repo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these simple steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   - `Open terminal Ctrl + Alt + T`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   - `git clone git@github.com:francisuloko/bookstore-app.git`
 
-## Learn More
+   - `cd bookstore-app`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - `npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - `npm start`
 
-### Code Splitting
+   - `visit localhost:8080`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Run the tests
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- How to run the tests: `npm run test` or `yarn test`
+   
 
 ## Author
 
@@ -82,11 +73,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/francisuloko/react-bookstore/issues).
+Feel free to check the [issues page](https://github.com/francisuloko/bookstore-app/issues).
+
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
 
 ## Acknowledgments
 
@@ -94,4 +87,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://mit-license.org/) licensed
+This project is [MIT](https://mit-license.org/) licensed.

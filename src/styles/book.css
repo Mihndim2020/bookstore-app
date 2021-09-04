@@ -1,0 +1,8 @@
+.Li-Lesson-Panel {
+  width: 75rem;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 15px auto;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
