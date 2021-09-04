@@ -15,8 +15,8 @@ function App() {
           <Categories />
         </Route>
         <Route path="/">
-          <New />
           <Books />
+          <New />
         </Route>
       </Switch>
     </Router>

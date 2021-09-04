@@ -9,10 +9,10 @@ const New = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const title = e.target.title.value;
-    const author = e.target.author.value;
+    const category = e.target.category.value;
     e.target.title.value = '';
-    e.target.author.value = '';
-    dispatch(addBookAction(title, author));
+    e.target.category.value = '';
+    dispatch(addBookAction(title, category));
   };
 
   return (
@@ -22,13 +22,16 @@ const New = () => {
           ADD NEW BOOK
         </span>
       </div>
-      <input type="text" name="title" placeholder="Title" className="Lesson-Panel" required />
-      <input className="Lesson-Panel-2" type="text" name="author" placeholder="Author" required />
-      <span className="ADD-BOOK">
-        <button type="submit" className="Rectangle-2 ADD-BOOK">
-          ADD BOOK
-        </button>
-      </span>
+      <input className="Lesson-Panel" type="text" name="title" placeholder="Title" required />
+      <select className="Lesson-Panel-2" type="text" name="category" placeholder="Category" required>
+        <option selected disabled value=""> Choose a Category </option>
+        <option value="Fiction">Sci-Fi</option>
+        <option value="Action">Fiction</option>
+        <option value="Terror">Detective</option>
+      </select>
+      <button type="submit" className="Rectangle-2 ADD-BOOK">
+        ADD BOOK
+      </button>
     </form>
   );
 };

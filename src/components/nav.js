@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Nav = () => (
-  <nav className="panel-bg">
+  <nav className="">
     <span className="Bookstore-CMS Text-Style-5">
       Bookstore CMS
     </span>
@@ -11,7 +11,6 @@ const Nav = () => (
         BOOKS
       </span>
     </Link>
-
     <Link to="/categories">
       <span className="CATEGORIES Text-Style-7">
         CATEGORIES
