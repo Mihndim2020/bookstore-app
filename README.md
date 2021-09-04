@@ -3,7 +3,7 @@
 > A Boostore app built with React-Redux which is able connect to an existing API to create and remove books in a remote server
 
 ## Screenshots
-TBA
+![](./src/mainscreenshot.png)
 
 The objective of this project is to: Understand the concept of state management; use store, actions and reducers in React; Connect React and Redux, and Connect an existing API via Redux and use the data to display something in a UI
 
