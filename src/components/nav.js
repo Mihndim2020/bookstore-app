@@ -2,15 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link to="/"> Books </Link>
-      </li>
-      <li>
-        <Link to="/categories"> Categories </Link>
-      </li>
-    </ul>
+  <nav className="">
+    <span className="Bookstore-CMS Text-Style-5">
+      Bookstore CMS
+    </span>
+    <Link to="/">
+      <span className="BOOKS Text-Style-7">
+        BOOKS
+      </span>
+    </Link>
+    <Link to="/categories">
+      <span className="CATEGORIES Text-Style-7">
+        CATEGORIES
+      </span>
+    </Link>
+    <Link to="/" className="user">
+      <i className="fas fa-user rounded"> </i>
+    </Link>
   </nav>
 );
 
