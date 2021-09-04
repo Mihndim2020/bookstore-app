@@ -5,7 +5,7 @@
 ## Screenshots
 TBA
 
-This objective of this project is to Understand the concept of state management; use store, actions and reducers in React; Connect React and Redux, and Connect an existing API via Redux and use the data to display something in a UI
+The objective of this project is to: Understand the concept of state management; use store, actions and reducers in React; Connect React and Redux, and Connect an existing API via Redux and use the data to display something in a UI
 
 In this project, I have:
 
