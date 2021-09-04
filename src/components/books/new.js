@@ -16,9 +16,17 @@ const New = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="title" placeholder="Title" required />
-      <input type="text" name="author" placeholder="Author" required />
-      <button type="submit">Add</button>
+      <div className="row mb-3">
+        <div className="col-6 col-sm-4 themed-grid-col">
+          <input type="text" name="title" placeholder="Title" required />
+        </div>
+        <div className="col-6 col-sm-4 themed-grid-col">
+          <input type="text" name="author" placeholder="Author" required />
+        </div>
+        <div className="col-6 col-sm-4 themed-grid-col">
+          <button type="submit" className="btn btn-primary">Add</button>
+        </div>
+      </div>
     </form>
   );
 };

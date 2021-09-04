@@ -4,6 +4,7 @@ import New from './components/books/new';
 import Categories from './components/categories/categories';
 import Nav from './components/nav';
 import './App.css';
+import './styles/nav.css';
 
 function App() {
   return (
