@@ -15,7 +15,7 @@ In this project, I have:
 
 ## Live Demo
 
-![Netlify](https://deploy-preview-4--affectionate-feynman-2e3aae.netlify.app/)
+[Netlify](https://deploy-preview-4--affectionate-feynman-2e3aae.netlify.app/)
 
 
 ## Built With
